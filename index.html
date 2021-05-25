@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/main.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="container mt-3">
+      <div class="row">
+        <div class="col-12 col-md-8 offset-md-2">
+          <div class="card">
+            <div class="card-header text-center">
+              <h4>Umumiy So'mma: <span id="umumiy">0</span> So'm</h4>
+              <h6>Ayni vaqtdagi kurs miqdori: 1$ = <span id="miqdor">0</span> So'm</h6>
+              <p class="d-flex umumiytarix">
+                <span class="kirimu"
+                  >Umumiy kirim = <span id="umumiykirim">0</span> So'm</span
+                >
+                <span class="d-block ml-auto chiqimu"
+                  >Umumiy chiqim = <span id="umumiychiqim">0    </span> So'm</span
+                >
+              </p>
+            </div>
+            <div class="card-body">
+              <label for="kirimChiqim">Kirim / Chiqim</label>
+              <input
+                type="number"
+                class="form-control"
+                id="kirimChiqim"
+                placeholder="So'mmani kiriting"
+              />
+
+              <label for="turi" class="mt-4">Pul birligi</label>
+              <select class="form-control" id="turi">
+                <option value="Dollor">AQSH dollor</option>
+                <option value="So`m">So'm</option>
+              </select>
+
+              <label for="kurs" class="mt-4">Dollor kursi 1$ uchun</label>
+              <input
+                type="number"
+                class="form-control"
+                id="kurs"
+                placeholder="Dollor kursi"
+              />
+
+              <label for="sabab" class="mt-4">Kirim va Chiqim sabablari</label>
+              <input
+                type="text"
+                class="form-control"
+                id="sabab"
+                placeholder="Sababini kiriting"
+              />
+            </div>
+
+            <div class="card-footer justify-content-between d-flex">
+              <button type="button" class="btn kirim w-50 mr-5" onclick="Add()">
+                Kirim
+              </button>
+              <button type="button" class="btn chiqim w-50" onclick="chiqim()">
+                Chiqim
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 mt-4">
+          <p>Kirim Chiqim</p>
+          <table class="table table-hover border">
+            <thead>
+              <tr>
+                <td>№</td>
+                <td>Kirim/Chiqim miqdori</td>
+                <td>Kirim va Chiqim sabablari</td>
+                <td>Pul Birligi</td>
+                <td>Dollor kursi</td>
+                <td>Kirim/Chiqim</td>
+              </tr>
+            </thead>
+            <tbody id="result"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/jQuery.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,46 @@
+thead {
+  color: rgba(175, 8, 8, 0.705);
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.col-12 p {
+  font-size: 22px;
+  font-weight: 700;
+}
+label {
+  font-size: 18px;
+  font-weight: 700;
+  color: #555;
+}
+.kirim {
+  background-color: rgb(98, 167, 98);
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+}
+.kirim:focus{
+background-color: #fff;
+color: rgb(98, 167, 98);
+}
+.chiqim {
+  background-color: rgb(107, 105, 221);
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+}
+.chiqim:focus{
+    background-color: #fff;
+    color: rgb(107, 105, 221);
+    }
+tbody {
+  font-weight: 600;
+}
+.umumiytarix .kirimu {
+  color: rgb(98, 167, 98);
+  font-weight: 700;
+}
+.umumiytarix .chiqimu {
+  color: rgb(107, 105, 221);
+  font-weight: 700;
+}
